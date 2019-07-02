@@ -28,7 +28,6 @@ body {
 .main-content {
   background-color: chartreuse;
   grid-area: main-content;
-  overflow: auto;
 }
 
 .left-sidebar {
@@ -61,4 +60,20 @@ body {
     background-color: darkblue;
     color: white;
     grid-area: footer;
+}
+
+@media (max-width: 699px) {
+  .grid-container {
+    grid-gap: 0;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "header       header      "
+      "main-content main-content"
+      "left-sidebar right-sidebar"
+      "footer       footer";
+  }
+
+  [class^="sidebar-item"] {
+    display: none;
+  }
 }
