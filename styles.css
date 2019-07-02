@@ -33,6 +33,7 @@ body {
 
 .left-sidebar {
   background-color: darkorange;
+  box-shadow: 0px 0px 50px 0px black;
   grid-area: left-sidebar;
 }
 
@@ -41,8 +42,23 @@ body {
   grid-area: right-sidebar;
 }
 
+.sidebar-item-1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.sidebar-item-2 {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+}
+
+.sidebar-item-3 {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+}
+
 .footer {
-  background-color: darkblue;
-  color: white;
-  grid-area: footer;
+    background-color: darkblue;
+    color: white;
+    grid-area: footer;
 }
