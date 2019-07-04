@@ -31,12 +31,19 @@ body {
 }
 
 .left-sidebar {
+  align-items: center;
   background-color: darkorange;
   box-shadow: 0px 0px 50px 0px black;
   display: grid;
+  justify-items: center;
   grid-area: left-sidebar;
   grid-template-rows: repeat(4, 25%);
   grid-gap: 20px;
+}
+
+.sidebar-item-3 {
+  align-self: flex-end;
+  justify-self: end;
 }
 
 .right-sidebar {
