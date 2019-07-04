@@ -33,7 +33,10 @@ body {
 .left-sidebar {
   background-color: darkorange;
   box-shadow: 0px 0px 50px 0px black;
+  display: grid;
   grid-area: left-sidebar;
+  grid-template-rows: repeat(4, 25%);
+  grid-gap: 20px;
 }
 
 .right-sidebar {
@@ -41,19 +44,8 @@ body {
   grid-area: right-sidebar;
 }
 
-.sidebar-item-1 {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-}
-
-.sidebar-item-2 {
-  grid-column: 1 / 1;
-  grid-row: 2 / 2;
-}
-
-.sidebar-item-3 {
-  grid-column: 1 / 1;
-  grid-row: 3 / 3;
+.sidebar-item {
+  background-color: grey;
 }
 
 .footer {
@@ -73,7 +65,7 @@ body {
       "footer       footer";
   }
 
-  [class^="sidebar-item"] {
+  .sidebar-item {
     display: none;
   }
 }
